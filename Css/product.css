@@ -156,6 +156,8 @@ article.product:hover .img-product{
 }
 .product .icons .btn-add-cart i{
     color: var(--white);
+    pointer-events: none;
+
 }
 .product .icons .btn-add-cart.active{
     color: var(--color_heading);
@@ -168,28 +170,5 @@ article.product:hover .img-product{
 .product .icons .btn-add-cart:hover{
     transform: scale(1.03);
     background: #f47600;
-}
-
-/* start banner_2 Style */
-.banner_2,
-.banner_3{
-    margin-block: 40px;
-    
-}
-
-.banner_2 .container .banner_img,
-.banner_3 .container .banner_img{
-    justify-content: space-between;
-    gap: 2%;
-}
-/* Start section Electronic */
-.product .name-product-electronic a{
-    font-size: 18px;
-    color: #000;
-}
-.product .price-electronic{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
 }
 

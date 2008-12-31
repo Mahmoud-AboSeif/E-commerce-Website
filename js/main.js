@@ -45,3 +45,19 @@ top:0,
 behavior:'smooth',
 })
 }
+// Start header responsive
+let open_menu = document.querySelector(".open-menu");
+let close_menu = document.querySelector(".close-menu");
+let nav_links = document.querySelector(".nav-links");
+
+open_menu.addEventListener('click' , ()=>{
+    nav_links.classList.add('active')
+})
+close_menu.addEventListener('click' , ()=>{
+    nav_links.classList.remove('active')
+})
+    
+    
+function cs_menu(){
+    nav_links.classList.toggle('active');
+}

@@ -14,8 +14,7 @@ var swiper = new Swiper(".slide-swp", {
 // swiper slide deals products
 var swiper = new Swiper(".slide-product ,.all-slide-product", {
     
-    slidesPerView:5,
-    spaceBetween:20,
+    
     autoplay:{
         delay:2500,
     },
@@ -23,15 +22,48 @@ var swiper = new Swiper(".slide-product ,.all-slide-product", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-    
+    breakpoints:{
+        1200:{
+            slidesPerView:5,
+            spaceBetween:20,
+        },
+        900:{
+            slidesPerView:4,
+            spaceBetween:20,
+        },
+        700:{
+            slidesPerView:3,
+            spaceBetween:15,
+        },
+        0:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+    }
 });
 // swiper slide electronic products
 var swiper = new Swiper(".slide-product-electronic ,.slide-product-appliances,.slide-product-mobiles ", {
-    slidesPerView:5,
-    spaceBetween:26,
+    
     navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     },
-    
+    breakpoints:{
+        1200:{
+            slidesPerView:5,
+            spaceBetween:26,
+        },
+        900:{
+            slidesPerView:4,
+            spaceBetween:20,
+        },
+        700:{
+            slidesPerView:3,
+            spaceBetween:15,
+        },
+        0:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+    }
 });

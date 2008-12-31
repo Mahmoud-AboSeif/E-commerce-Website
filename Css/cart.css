@@ -30,6 +30,9 @@
     cursor: pointer;
     font-size: 35px;
 }
+.cart .top-cart .close-item:hover i{
+    color: #d81212;
+}
 
 .cart .items-in-cart {
     padding-block: 20px;
@@ -113,4 +116,10 @@
 .cart .bottom-cart .button-cart .trans-bg{
     background: transparent;
     color: var(--color_heading);
+}
+@media (max-width:650px){
+    .cart{
+        width: 100%;
+        right: -100%;
+    }
 }

@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="./Css/index.css">
         <link rel="stylesheet" href="./Css/header.css">
         <link rel="stylesheet" href="./Css/product.css">
+        <link rel="stylesheet" href="./Css/banner.css">
         <link rel="stylesheet" href="./Css/footer.css">
         <link rel="stylesheet" href="./Css/cart.css">
-        <link rel="stylesheet" href="./Css/favorite_cart.css">
+        
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -45,7 +46,7 @@
     <header >
         <div class="top-header ">
             <div class="container flex">
-                <a href="#"><img src="./img/logo.png" alt="Logo"></a>
+                <a href="#"><img class="logo" src="./img/logo.png" alt="Logo"></a>
                 <form action="" class="search-box flex">
                     <div class="select-box">
                         <select name="categories" id="categories">
@@ -66,7 +67,7 @@
                     </button>
                 </form>
                 <div class="header-icons flex">
-                    <div onclick="open_close_cart_favorite()" class="icon">
+                    <div class="icon">
                         <a href="#">
                             <i class="fa-regular fa-heart"></i>
                             <span class="count count-favorite">0</span>
@@ -78,6 +79,12 @@
                             <span class="count count-item-header">0</span>
                         </a>
                     </div>
+                    <div class="icon">
+                        <a href="#">
+                            <span class="open-menu"><i class="fa-solid fa-bars "></i></span>
+                        </a>
+                    </div>
+                    
                     
                 </div>
             </div>
@@ -87,6 +94,11 @@
                 <nav class="navbar flex">
                     <div class="nv-saids flex">
                         <div class="left-said flex ">
+                            <div class="icon">
+                                <a href="#">
+                                    <span onclick="cs_menu()" class="open-menu"><i class="fa-solid fa-bars "></i></span>
+                                </a>
+                            </div>
                             <div class="category ">
                                 <button onclick="open_Category()" class="category-btn flex ">
                                 <i id="menuIcon" class="fa-solid fa-bars"></i>
@@ -104,16 +116,19 @@
                                     <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Toys & Hobbies</a>
                                 </div>
                             </div>
+
                             <ul class="nav-links flex">
-                                <li><a href="#" class="active" >Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <span onclick="" class="close-menu"><i class="fa-regular fa-circle-xmark"></i></span>
+                                <li onclick="cs_menu()"><a href="#" class="active" >Home</a></li>
+                                <li onclick="cs_menu()"><a href="#">About</a></li>
+                                <li onclick="cs_menu()"><a href="#">Accessories</a></li>
+                                <li onclick="cs_menu()"><a href="#">Blog</a></li>
+                                <li onclick="cs_menu()"><a href="#">Contact</a></li>
                             </ul>
                             
                         </div>
                         <div class="right-said btns">
+                            
                             <a href="#" class="btn" >Login <i class="fa-solid fa-right-to-bracket"></i></a>
                             <a href="#" class="btn" >Sign Up <i class="fa-solid fa-user-plus"></i></a>
                         </div>
@@ -289,7 +304,7 @@
     <!-- Start banner 3 -->
     <div class="banner_3">
         <div class="container">
-            <div class="banner_img flex">
+            <div class="banner_img_3 flex">
                 <a href="#"><img class="box" src="./img/banner_box1.jpg" alt="banner"></a>
                 <a href="#"><img class="box" src="./img/banner_box2.jpg" alt="banner"></a>
                 <a href="#"><img class="box" src="./img/banner_box3.jpg" alt="banner"></a>
@@ -382,7 +397,7 @@
     <script src="./js/products_home.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cart.js"></script>
-    <script src="./js/favorite_cart.js"></script>
+    
     
 </body>
 </html>
