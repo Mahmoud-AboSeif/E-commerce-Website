@@ -1,0 +1,84 @@
+header{
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header .top-header .container{
+    justify-content: space-between;
+    padding: 15px 0;
+}
+header .container a > img{
+    width: 180px;
+}
+header .container .search-box {
+    width: 610px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: var(--bg_color);
+}
+header .container .search-box input{
+    height: 55px;
+    width: 400px;
+    padding: 5px 15px 5px 10px;
+    background: var(--bg_color);
+    
+}
+header .container .search-box .select-box{
+    position: relative;
+}
+header .container .search-box .select-box::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background: #b9b9b9;
+}
+header .container .search-box select{
+    height: 55px;
+    width: 190px;
+    background: var(--bg_color);
+    font-size: .9rem;
+    cursor: pointer;
+    padding-inline: 10px;
+}
+header .container .search-box select option{
+    font-size: 15px;
+}
+header .container .search-box > button{
+    height: 55px;
+    padding-inline: 20px;
+    background: var(--main_color);
+}
+header .container .search-box > button i{
+    color: var(--white);
+}
+header .header-icons {
+    gap: 30px;
+}
+header .header-icons .icon{
+    position: relative;
+    cursor: pointer;
+}
+header .header-icons .icon i{
+    font-size: 24px;
+}
+header .top-header .header-icons .icon .count{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    background: var(--main_color);
+    color: var(--white);
+
+    
+}

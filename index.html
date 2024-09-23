@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Css Pages-->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./Css/header.css">
+        
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-commerce Website </title>
+</head>
+<body>
+    <header >
+        <div class="top-header ">
+            <div class="container flex">
+                <a href="#"><img src="./img/logo.png" alt="Logo"></a>
+                <form action="" class="search-box flex">
+                    <div class="select-box">
+                        <select name="categories" id="categories">
+                            <option value="All categories">All categories</option>
+                            <option value="Electronics & Digital">Electronics & Digital</option>
+                            <option value="Phones & Tablet">Phones & Tablet</option>
+                            <option value="Fashion & Clothing">Fashion & Clothing</option>
+                            <option value="TV & Mounter ">TV & Mounter</option>
+                            <option value="Jewelry & Watches">Jewelry & Watches</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                            <option value="Toys & Hobbies">Toys & Hobbies</option>
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit" >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="header-icons flex">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count-favourite">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <span class="count count-item-header">0</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
