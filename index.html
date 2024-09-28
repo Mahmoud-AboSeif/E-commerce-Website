@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Swiper's CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            
     <title>E-commerce Website </title>
 </head>
 <body>
@@ -68,7 +71,7 @@
                                 </button>
                                 <div class="category_nav_list border flex">
                                     <a href="#" onclick="open_Category() , rotate_angle()" >Top 10 Offers</a>
-                                    <a href="#" onclick="open_Category() , rotate_angle()" >Electronics & Digital</a>
+                                    <a href="#" class="test" onclick="open_Category() , rotate_angle()" >Electronics & Digital</a>
                                     <a href="#" onclick="open_Category() , rotate_angle()" >Phones & Tablet</a>
                                     <a href="#" onclick="open_Category() , rotate_angle()" >Fashion & Clothing</a>
                                     <a href="#" onclick="open_Category() , rotate_angle()" >TV & Mounter</a>
@@ -95,7 +98,27 @@
             </div>
         </div>
     </header>
-
+    <section class="slider" >
+        <div class="container cont_swp flex">
+            <!-- Swiper lip -->
+            <div class="slide-swp mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/banner_home1.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/banner_home2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="banner_2">
+                <a href="#"><img src="./img/banner_home3.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- file js -->
     <script src="./js/main.js"></script>
 </body>

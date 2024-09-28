@@ -169,3 +169,42 @@ header .bottom-header .navbar .category .category_nav_list a:hover{
 header .bottom-header .category .category_nav_list a:last-child{
 border: none;
 }
+/* slider section */
+.slider{
+    position: relative;
+    z-index: -1;
+}
+.slider .container{
+    width: 100%;
+    justify-content: space-between;
+}
+.slider .container .slide-swp {
+    
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+.slider .container .slide-swp .swiper-wrapper{
+    height: auto !important;
+}
+.slider .container .slide-swp .swiper-pagination span{
+    background-color: var(--white);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--main_color) !important;
+    width: 34px !important;
+    height: 8px !important;
+    border-radius: 30px !important;
+}
+.slider .banner_2{
+    width: 23%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .banner_2 a{
+    height: 100%;
+    width: 100%;
+}
+
+

@@ -17,8 +17,18 @@ let fa_angle_down = document.querySelector(".fa-angle-down");
     category_btn.addEventListener('click',()=>{
     fa_angle_down.classList.toggle('rotated');
 });
+
 function rotate_angle(){
     fa_angle_down.classList.toggle('rotated');
 };
-
-
+var swiper = new Swiper(".slide-swp", {
+    pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets:true,
+    Clickable : true
+    },
+    autoplay:{
+        delay:2000,
+    },
+    loop:true,
+});
