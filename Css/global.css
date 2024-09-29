@@ -45,6 +45,9 @@
 .btn:hover{
     transform: scale(1.05)
 }
+.last_layer{
+    z-index: -1;
+}
 /* ================
     GENERAL STYLE
 ===================*/

@@ -32,3 +32,12 @@ var swiper = new Swiper(".slide-swp", {
     },
     loop:true,
 });
+let slider = document.querySelector(".slider");
+category_btn.addEventListener('click',()=>{
+    slider.classList.toggle('last_layer');
+});
+function last_layer(){
+    slider.classList.remove('last_layer');
+};
+
+

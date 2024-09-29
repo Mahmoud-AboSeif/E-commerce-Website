@@ -172,7 +172,7 @@ border: none;
 /* slider section */
 .slider{
     position: relative;
-    z-index: -1;
+    
 }
 .slider .container{
     width: 100%;
