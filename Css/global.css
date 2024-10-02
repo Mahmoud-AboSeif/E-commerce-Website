@@ -82,7 +82,7 @@ Start Scrollbar
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #999;
+    background: var(--main_color);
     border-radius: 2px;
 }
 
