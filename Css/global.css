@@ -39,14 +39,21 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: all .3s ease
+    transition: all .3s ease;
     
 }
 .btn:hover{
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 .last_layer{
     z-index: -1;
+}
+.stars{
+    margin-bottom: 10px ;
+}
+.stars i{
+    color: var(--main_color) ;
+    font-size: 14px
 }
 /* ================
     GENERAL STYLE

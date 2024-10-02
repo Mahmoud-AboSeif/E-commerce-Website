@@ -21,17 +21,7 @@ let fa_angle_down = document.querySelector(".fa-angle-down");
 function rotate_angle(){
     fa_angle_down.classList.toggle('rotated');
 };
-var swiper = new Swiper(".slide-swp", {
-    pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets:true,
-    Clickable : true
-    },
-    autoplay:{
-        delay:2000,
-    },
-    loop:true,
-});
+
 let slider = document.querySelector(".slider");
 category_btn.addEventListener('click',()=>{
     slider.classList.toggle('last_layer');

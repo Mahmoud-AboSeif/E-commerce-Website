@@ -7,7 +7,7 @@
         <!--Css Pages-->
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./Css/header.css">
-        
+        <link rel="stylesheet" href="./Css/product.css">
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -174,9 +174,52 @@
             </article>
         </div>
     </section>
+    <section class="slider-products slide" >
+        <div class="container">
+            <div class="slide-product mySwiper">
+                <div class="products swiper-wrapper" id="swiper-items-sale">
+                    <article class="swiper-slide product border">
+                        <span class="sale-present">%50</span>
+                        <div class="img-product flex">
+                            <a href="#"><img src="./img/product/0.png" alt="product"></a>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="name-product">
+                            <a href="#">
+                                Lorem You will improve your reading comprehension and develop your vocabulary
+                                on a diverse range of international events, celebrations and topics.
+                            </a>
+                        </p>
+                        <div class="price flex">
+                            <p>
+                                <span>$50</span>
+                                <p class="old-price">$100</p>
+                            </p>
+                        </div>
+                        <div class="icons flex">
+                            <span class="btn-add-cart flex">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                add to cart
+                            </span>
+                            <span class="icon-product flex">
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- file js -->
     <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
