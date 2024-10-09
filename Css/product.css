@@ -7,6 +7,76 @@ article.product{
     border-radius: 5px;
     position: relative;
 }
+/* Start slide style */
+.slide{
+    margin-bottom: 70px;
+}
+.top_slide{
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--main_color);
+}
+.top_slide h2{
+    position: relative;
+    text-transform: uppercase;
+    background-color: var(--main_color);
+    color: var(--white);
+    font-size: 18px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+.top_slide h2 i{
+    color: var(--white);
+}
+.top_slide h2::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    z-index: 9;
+    border-left: 20px solid transparent;
+    background: var(--white);
+    left: 0;
+    border-bottom: 20px solid #e26e02;
+}
+.slide .container{
+    position: relative;
+}
+.slide .container .mySwiper{
+    padding: 10px 0;
+}
+.slide .container .mySwiper .btn{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: var(--border_color);
+    color: var(--color_heading);
+    font-weight: bold;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid var(--border_color);
+}
+.slide .container .mySwiper .btn::after{
+    font-size: 13px;
+}
+.slide .container .btn.swiper-button-prev{
+    left: calc(100% - 80px );
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: var(--main_color) !important;
+    opacity: 1;
+}
+.slide .container .move_line{
+    background: var(--border_color) !important;
+    height: 2px !important;
+    border-radius: 30px !important;
+}
+/* Start Card style */
 .mySwiper{
     overflow: hidden;
 }
@@ -55,6 +125,7 @@ article.product:hover .img-product{
 .product .icons{
     gap: 10px;
     margin-top: 15px;
+    
 }
 .product .icon-product{
     width: 35px;
@@ -64,6 +135,7 @@ article.product:hover .img-product{
     justify-content: center;
     transition: all .3s ease;
 }
+
 .product .icon-product:hover{
     background: var(--main_color);
 }
@@ -95,4 +167,28 @@ article.product:hover .img-product{
 .product .icons .btn-add-cart:hover{
     transform: scale(1.03);
     background: #f47600;
+}
+
+/* start banner_2 Style */
+.banner_2{
+    margin-bottom: 40px;
+    
+}
+
+.banner_2 .container .banner_img{
+    justify-content: space-between;
+    
+}
+.banner_2 .container .banner_img img{
+    width: 49%;
+}
+/* Start section Electronic */
+.product .name-product-electronic a{
+    font-size: 18px;
+    color: #000;
+}
+.product .price-electronic{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }

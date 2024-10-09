@@ -29,5 +29,9 @@ category_btn.addEventListener('click',()=>{
 function last_layer(){
     slider.classList.remove('last_layer');
 };
+let icon_product = document.querySelector('.icon-product');
+icon_product.addEventListener('click',()=>{
+    icon_product.classList('show');
+});
 
 
