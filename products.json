@@ -150,28 +150,28 @@
     "name": "Kenstar Ester ABS Plastic 750W Mixer Grinder",
     "price": 280,
     "old_price": 330,
-    "catetory":"appliances"
+    "category":"appliances"
   },
   {
     "id": 21,
     "img": "img/product/21.png",
     "name": "Multifunctional Food Processor",
     "price": 350,
-    "catetory":"appliances"
+    "category":"appliances"
   },
   {
     "id": 22,
     "img": "img/product/22.png",
     "name": "Zanussi Washing Machine 8 Kg 1200 RPM ",
     "price": 580,
-    "catetory":"appliances"
+    "category":"appliances"
   },
   {
     "id": 23,
     "img": "img/product/23.png",
     "name": "Sharp 42 Lt Electronic Oven Convection",
     "price": 400,
-    "catetory":"appliances"
+    "category":"appliances"
   },
   {
     "id": 24,
@@ -179,6 +179,6 @@
     "name": "Lenovo Monitor Legion R27fc-30 Gaming Curved",
     "price": 300,
     "old_price": 380,
-    "catetory":"electronics"
+    "category":"electronics"
   }
 ]

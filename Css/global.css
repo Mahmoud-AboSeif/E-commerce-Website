@@ -55,6 +55,28 @@
     color: var(--main_color) ;
     font-size: 14px
 }
+.up{
+    width: 34px;
+    height: 34px;
+    border-radius: 30% ;
+    position: fixed;
+    bottom: 17px;
+    right: -50px;
+    background-color: var(--main_color);
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.1.5s;
+    z-index: 333;
+}
+.up span{
+    margin-left: 11.22px;
+    color: #fff;
+}
+.up.show{
+    right: 17px;
+} 
 /* ================
     GENERAL STYLE
 ===================*/
@@ -96,8 +118,8 @@ Start Scrollbar
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(105, 104, 104);
 }
-main{
-    width: 86%;
+/* main{
+    width: 100%%;
     margin: auto;
 }
 @media (max-width: 669px)
@@ -105,7 +127,7 @@ main{
     main{
         width: 96%;
     }
-}
+} */
 /* for Firefox */
 html {
     scrollbar-color: #9e4673 #3d4a59;

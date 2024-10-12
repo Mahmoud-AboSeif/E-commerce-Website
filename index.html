@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./Css/header.css">
         <link rel="stylesheet" href="./Css/product.css">
+        <link rel="stylesheet" href="./Css/footer.css">
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -15,6 +16,7 @@
         <!-- Link Swiper's CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
             
+            <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <title>E-commerce Website </title>
 </head>
 <body>
@@ -117,6 +119,7 @@
             </div>
         </div>
     </section>
+    <!-- Start banner 4 -->
     <section class="banner_4">
         <div class="container flex">
             <article class="box flex">
@@ -173,7 +176,27 @@
                 </div>
             </article>
         </div>
-    </section>  
+    </section> 
+    <!-- End banner 4 -->
+    <!-- Start All-slider-products -->
+    <main class="All-slider-products slide">
+        <div class="container">
+            <div class="all-slide-product mySwiper">
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>all products</h2>
+                </div>
+
+                <div class="products swiper-wrapper" id="swiper-items-products">
+                    
+                </div>
+                
+                <div class="btn swiper-button-next"></div>
+                <div class="btn swiper-button-prev"></div>
+            </div>
+        </div>
+    </main>
+    <!-- End All-slider-products -->
+    <!-- Start deals-slider-products -->
     <section class="slider-products slide" >
         <div class="container">
             <div class="slide-product mySwiper">
@@ -187,10 +210,11 @@
                 
                 <div class="btn swiper-button-next"></div>
                 <div class="btn swiper-button-prev"></div>
-                <div class="swiper-pagination move_line"></div>
             </div>
         </div>
     </section>
+    <!-- End deals-slider-products -->
+    <!-- Start banner 2 -->
     <div class="banner_2">
         <div class="container">
             <div class="banner_img flex">
@@ -199,53 +223,126 @@
             </div>
         </div>
     </div>
-    <section class="slider-products slide" >
+    <!-- End banner 2 -->
+    <!-- Start electronic-slider-products -->
+    <section class="slider-electronic-products slide" >
         <div class="container">
-            <div class="slide-product mySwiper">
-                <div class="top_slide">
-                    <h2><i class="fa-solid fa-computer"></i>electronics</h2>
-                </div>
+                <!-- Swiper -->
+                <div class="slide-product-electronic mySwiper">
+                    <div class="top_slide">
+                        <h2><i class="fa-solid fa-tags"></i>electronics</h2>
+                    </div>
+    
+                    <div class="products swiper-wrapper" id="swiper-items-electronic">
+                        
+                    </div>
+                    
+                    <div class="btn swiper-button-next"></div>
+                    <div class="btn swiper-button-prev"></div>
 
-                <div class="electronic-products swiper-wrapper">
-                    <article class="swiper-slide product">
-                        <div class="img-product flex">
-                            <a href="#"><img src="./img/product/5.png" alt="product"></a>
-                        </div>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="name-product-electronic">
-                            <a href="#">
-                                Lorem You will improve your reading celebrations.
-                            </a>
-                        </p>
-                        <div class="price-electronic flex">
-                            <span>$350</span>
-                        </div>
-                        <div class="icons flex">
-                            <span class="btn-add-cart flex">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                add to cart
-                            </span>
-                            <span class="icon-product flex">
-                                <i class="fa-regular fa-heart"></i>
-                            </span>
-                        </div>
-                    </article>
-                    
-                    
                 </div>
-                
-                <div class="btn swiper-button-next"></div>
-                <div class="btn swiper-button-prev"></div>
-                <div class="swiper-pagination move_line"></div>
-            </div>
         </div>
     </section>
+    <!-- End electronic-slider-products -->
+    <!-- Start appliances-slider-products -->
+    <section class="slider-appliances-products slide" >
+        <div class="container">
+                <!-- Swiper -->
+                <div class="slide-product-appliances mySwiper">
+                    <div class="top_slide">
+                        <h2><i class="fa-solid fa-tags"></i>appliances</h2>
+                    </div>
+    
+                    <div class="products swiper-wrapper" id="swiper-items-appliances">
+                        
+                    </div>
+                    
+                    <div class="btn swiper-button-next"></div>
+                    <div class="btn swiper-button-prev"></div>
+
+                </div>
+        </div>
+    </section>
+    <!-- End appliances-slider-products -->
+    <!-- Start banner 3 -->
+    <div class="banner_3">
+        <div class="container">
+            <div class="banner_img flex">
+                <a href="#"><img class="box" src="./img/banner_box1.jpg" alt="banner"></a>
+                <a href="#"><img class="box" src="./img/banner_box2.jpg" alt="banner"></a>
+                <a href="#"><img class="box" src="./img/banner_box3.jpg" alt="banner"></a>
+            </div>
+        </div>
+    </div>
+    <!-- End banner 3 -->
+    <!-- btn scroll up -->
+    <button class="up"><span>^</span></button>
+    <!-- Start mobiles-slider-products -->
+    <section class="slider-mobiles-products slide" >
+        <div class="container">
+                <!-- Swiper -->
+                <div class="slide-product-mobiles mySwiper">
+                    <div class="top_slide">
+                        <h2><i class="fa-solid fa-tags"></i>mobiles</h2>
+                    </div>
+    
+                    <div class="products swiper-wrapper" id="swiper-items-mobiles">
+                        
+                    </div>
+                    
+                    <div class="btn swiper-button-next"></div>
+                    <div class="btn swiper-button-prev"></div>
+
+                </div>
+        </div>
+    </section>
+    <!-- End mobiles-slider-products -->
+    <!-- Start footer -->
+    <footer>
+        <div class="container flex">
+            <div class="social_icons">
+                <a href="#"><img src="./img/white_logo.png" alt="Logo"></a>
+                <p>Lorem ipsum dolor sit mobiles-products E-commerce Website .</p>
+                <div class="icons flex">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div> 
+            <div class="find-it-fast">
+                <h4>Find It Fast</h4>
+                <div class="links flex">
+                    <a href="#">Laptops & Computers</a>
+                    <a href="#">Smart Phones & Tablet</a>
+                    <a href="#">Tv & Audio</a>
+                    <a href="#">Appliances</a>
+                    <a href="#">Jewelry & Watches</a>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <div class="links flex">
+                    <a href="#">Your Account</a>
+                    <a href="#">Returns& Exchanges</a>
+                    <a href="#">Shipping & Delivery time</a>
+                    <a href="#">Estimated Delivery time</a>
+                    <a href="#">Purchase History</a>
+                </div>
+            </div>
+            <div class="service-us">
+                <h4>Service Us</h4>
+                <div class="links flex">
+                    <a href="#">Support Center</a>
+                    <a href="#">Term & Conditions</a>
+                    <a href="#">Privacy & Policy</a>
+                    <a href="#">Help</a>
+                    <a href="#">FAQS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- file js -->

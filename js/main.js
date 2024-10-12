@@ -29,9 +29,21 @@ category_btn.addEventListener('click',()=>{
 function last_layer(){
     slider.classList.remove('last_layer');
 };
-let icon_product = document.querySelector('.icon-product');
-icon_product.addEventListener('click',()=>{
-    icon_product.classList('show');
-});
+// let icon_product = document.querySelector('.icon-product');
+// icon_product.addEventListener('click',()=>{
+//     icon_product.classList('show');
+// });
+
+// Start btn up scroll
+let up = document.querySelector(".up");
+window.onscroll = function(){
+    this.scrollY >= 2100? up.classList.add("show"):up.classList.remove("show");
+};
+up.onclick= function(){
+window.scrollTo({
+top:0,
+behavior:'smooth',
+})
+}
 
 

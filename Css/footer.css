@@ -1,0 +1,18 @@
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--footer-bg);
+    
+}
+footer .container{
+    padding-block: 20px;
+    justify-content: space-between;
+}
+footer .container .social_icons img{
+    width: 200px;
+}
+footer .container .social_icons > p{
+    margin-block: 10px;
+    font-size: 14px;
+}
+

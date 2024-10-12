@@ -11,21 +11,25 @@ var swiper = new Swiper(".slide-swp", {
     loop:true,
 });
 
-// swiper slide products
-
-var swiper = new Swiper(".slide-product", {
-    slidesPerView:5,
+// swiper slide deals products
+var swiper = new Swiper(".slide-product ,.all-slide-product", {
+    slidesPerView:4.5,
     spaceBetween:20,
-    pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     },
+    autoplay:{
+        delay:2500,
+    },
+});
+// swiper slide electronic products
+var swiper = new Swiper(".slide-product-electronic ,.slide-product-appliances,.slide-product-mobiles ", {
+    slidesPerView:5,
+    spaceBetween:26,
     navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     },
-    autoplay:{
-        delay:3000,
-    },
-    
+
 });
