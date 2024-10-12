@@ -171,16 +171,13 @@ article.product:hover .img-product{
 
 /* start banner_2 Style */
 .banner_2{
-    margin-bottom: 40px;
+    margin-block: 40px;
     
 }
 
 .banner_2 .container .banner_img{
     justify-content: space-between;
-    
-}
-.banner_2 .container .banner_img img{
-    width: 49%;
+    gap: 2%;
 }
 /* Start section Electronic */
 .product .name-product-electronic a{
