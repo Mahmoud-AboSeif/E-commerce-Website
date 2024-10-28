@@ -13,15 +13,17 @@ var swiper = new Swiper(".slide-swp", {
 
 // swiper slide deals products
 var swiper = new Swiper(".slide-product ,.all-slide-product", {
-    slidesPerView:4.5,
+    
+    slidesPerView:5,
     spaceBetween:20,
+    autoplay:{
+        delay:2500,
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-    autoplay:{
-        delay:2500,
-    },
+    
 });
 // swiper slide electronic products
 var swiper = new Swiper(".slide-product-electronic ,.slide-product-appliances,.slide-product-mobiles ", {
@@ -31,5 +33,5 @@ var swiper = new Swiper(".slide-product-electronic ,.slide-product-appliances,.s
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     },
-
+    
 });

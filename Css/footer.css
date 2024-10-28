@@ -1,18 +1,94 @@
 footer{
-    width: 100%;
-    height: 100%;
-    background-color: var(--footer-bg);
+    background-color: var(--color_heading);
     
 }
 footer .container{
-    padding-block: 20px;
+    width: 100%;
+    padding-block: 40px;
     justify-content: space-between;
 }
-footer .container .social_icons img{
-    width: 200px;
+footer .container .big_row{
+    width: 30%;
 }
-footer .container .social_icons > p{
-    margin-block: 10px;
-    font-size: 14px;
+footer .container .big_row .logo-footer{
+    width: 180px;
 }
 
+footer .container .big_row >p{
+    width: 90%;
+    line-height: 1.5;
+    margin-block: 15px;
+    font-size: 14px;
+}
+footer .container .big_row .social_icons{
+    justify-content: flex-start;
+    gap: 10px;
+}
+footer .container .big_row .social_icons a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main_color);
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    transition: all .2s ease;
+}
+footer .container .big_row .social_icons i{
+    color: var(--white);
+    font-size: 20px;
+}
+footer .container .big_row .social_icons a:hover{
+    top: -5px;
+    transform: scale(1.05);
+}
+footer .container .row{
+    width: 22%;
+}
+footer .container .row h4{
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+footer .container .row .links{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 8px;
+}
+footer .container .row .links a{
+    font-size: 14px;
+    color: rgb(177, 171, 171);
+    position: relative;
+    left: 0;
+    transition: all .2s ease;
+}
+footer .container .row .links a:hover{
+    left: 8px;
+    color: var(--main_color);
+}
+footer .container .row .links a i{
+    color: var(--main_color);
+    font-size: 14px;
+    margin-right: 5px;
+}
+footer .bottom_footer{
+    background: var(--footer-bg);
+}
+footer .bottom_footer .container{
+    justify-content: space-between;
+    padding-block: 5px;
+}
+footer .bottom_footer .container p{
+    color: var(--white);
+}
+footer .bottom_footer .container .payment_img{
+    width: 350px;
+}
+footer .bottom_footer .container .payment_img img{
+    width: 300px;
+}

@@ -100,7 +100,7 @@ body {
 Start Scrollbar
 ===================*/
 ::-webkit-scrollbar {
-    width: 0.88rem;
+    width: 0.70rem;
 }
 
 ::-webkit-scrollbar-track {

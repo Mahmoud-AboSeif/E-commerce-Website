@@ -141,7 +141,7 @@ article.product:hover .img-product{
     color: var(--white);
     padding: 10px 8px ;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: lowercase;
     border-radius: 4px;
     border: 1px solid var(--main_color);
     transition: all .3s ease;
@@ -153,6 +153,7 @@ article.product:hover .img-product{
 .product .icons .btn-add-cart.active{
     color: var(--color_heading);
     background: transparent;
+    pointer-events: none;
 }
 .product .icons .btn-add-cart.active i{
     color: var(--main_color);

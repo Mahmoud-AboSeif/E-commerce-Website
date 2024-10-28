@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Css Pages-->
         <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./Css/index.css">
         <link rel="stylesheet" href="./Css/header.css">
         <link rel="stylesheet" href="./Css/product.css">
         <link rel="stylesheet" href="./Css/footer.css">
+        <link rel="stylesheet" href="./Css/cart.css">
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -20,6 +22,25 @@
     <title>E-commerce Website </title>
 </head>
 <body>
+    <div class="cart">
+        <div class="top-cart flex">
+            <h3>Cart Items : <span class="count-item-cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close-item"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items-in-cart" id="cart-item">
+            
+        </div>
+        <div class="bottom-cart">
+            <div class="total flex">
+                <p>SubTotal</p>
+                <p class="price-cart-total">$0</p>
+            </div>
+            <div class="button-cart flex">
+                <a href="#" class="btn-cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn-cart trans-bg btn">Shop More</span>
+            </div>
+        </div>
+    </div>
     <header >
         <div class="top-header ">
             <div class="container flex">
@@ -50,7 +71,7 @@
                             <span class="count count-favourite">0</span>
                         </a>
                     </div>
-                    <div class="icon">
+                    <div onclick="open_close_cart()" class="icon">
                         <a href="#">
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             <span class="count count-item-header">0</span>
@@ -300,44 +321,54 @@
     <!-- Start footer -->
     <footer>
         <div class="container flex">
-            <div class="social_icons">
-                <a href="#"><img src="./img/white_logo.png" alt="Logo"></a>
-                <p>Lorem ipsum dolor sit mobiles-products E-commerce Website .</p>
-                <div class="icons flex">
+            <div class="big_row">
+                <a href="#"><img class="logo-footer" src="./img/white_logo.png" alt="Logo"></a>
+                <p>Lorem ipsum dolor sit mobiles products E-commerce Website .</p>
+                
+                <div class="social_icons flex">
                     <a href="#"><i class="fa-solid fa-phone"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div> 
-            <div class="find-it-fast">
+            <div class="row">
                 <h4>Find It Fast</h4>
-                <div class="links flex">
-                    <a href="#">Laptops & Computers</a>
-                    <a href="#">Smart Phones & Tablet</a>
-                    <a href="#">Tv & Audio</a>
-                    <a href="#">Appliances</a>
-                    <a href="#">Jewelry & Watches</a>
+                <div class="links">
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Laptops & Computers</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Smart Phones & Tablet</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Tv & Audio</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Appliances</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Jewelry & Watches</a>
                 </div>
             </div>
-            <div class="quick-links">
+            <div class="row">
                 <h4>Quick Links</h4>
-                <div class="links flex">
-                    <a href="#">Your Account</a>
-                    <a href="#">Returns& Exchanges</a>
-                    <a href="#">Shipping & Delivery time</a>
-                    <a href="#">Estimated Delivery time</a>
-                    <a href="#">Purchase History</a>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Your Account</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Returns& Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Shipping & Delivery time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Estimated Delivery time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Purchase History</a>
                 </div>
             </div>
-            <div class="service-us">
+            <div class="row">
                 <h4>Service Us</h4>
-                <div class="links flex">
-                    <a href="#">Support Center</a>
-                    <a href="#">Term & Conditions</a>
-                    <a href="#">Privacy & Policy</a>
-                    <a href="#">Help</a>
-                    <a href="#">FAQS</a>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Privacy & Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container flex">
+                <p>&copy <span><a target="_blank" href="https://mahmoud-aboseif.github.io/My-profile/">Mahmoud Aboseif</a> </span>All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="./img/payment_method.png" alt="payment">
                 </div>
             </div>
         </div>
@@ -346,8 +377,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- file js -->
-    <script src="./js/main.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/products_home.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
 </body>
 </html>
