@@ -84,7 +84,7 @@ fetch('products.json')
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     ${isInCart ? "item in cart" : "add to cart"}
                                 </span>
-                                <span class="icon-product flex">
+                                <span class="icon-product flex data-id="${product.id}"">
                                     <i class="fa-regular fa-heart"></i>
                                 </span>
                             </div>

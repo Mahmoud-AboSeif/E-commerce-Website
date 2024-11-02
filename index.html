@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./Css/product.css">
         <link rel="stylesheet" href="./Css/footer.css">
         <link rel="stylesheet" href="./Css/cart.css">
+        <link rel="stylesheet" href="./Css/favorite_cart.css">
         <!--font awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -65,10 +66,10 @@
                     </button>
                 </form>
                 <div class="header-icons flex">
-                    <div class="icon">
+                    <div onclick="open_close_cart_favorite()" class="icon">
                         <a href="#">
                             <i class="fa-regular fa-heart"></i>
-                            <span class="count count-favourite">0</span>
+                            <span class="count count-favorite">0</span>
                         </a>
                     </div>
                     <div onclick="open_close_cart()" class="icon">
@@ -381,5 +382,7 @@
     <script src="./js/products_home.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/favorite_cart.js"></script>
+    
 </body>
 </html>

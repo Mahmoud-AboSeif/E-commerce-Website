@@ -135,6 +135,13 @@ article.product:hover .img-product{
 .product .icon-product:hover i{
     color: var(--white);
 }
+.product .icons .icon-product.active{
+    background: var(--main_color);
+    
+}
+.product .icon-product.active i{
+    color: var(--white);
+}
 .product .icons .btn-add-cart{
     background: var(--main_color);
     gap: 5px;
