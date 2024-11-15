@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Css Pages-->
+        <link rel="stylesheet" href="../Css/chickout.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../Css/header.css">
+        <link rel="stylesheet" href="../Css/footer.css">
+        <link rel="stylesheet" href="../Css/cart.css">
+        
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Favicon CSS -->
+            <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>E-commerce Website </title>
+</head>
+<body>
+    <div class="cart">
+        <div class="top-cart flex">
+            <h3>Cart Items : <span class="count-item-cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close-item"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items-in-cart" id="cart-item">
+            
+        </div>
+        <div class="bottom-cart">
+            <div class="total flex">
+                <p>SubTotal</p>
+                <p class="price-cart-total">$0</p>
+            </div>
+            <div class="button-cart flex">
+                <a href="#" class="btn-cart btn">Checkout</a>
+                <span onclick="open_close_cart()" class="btn-cart trans-bg btn">Shop More</span>
+            </div>
+        </div>
+    </div>
+    <header >
+        <div class="top-header ">
+            <div class="container flex">
+                <a href="#"><img class="logo" src="../img/logo.png" alt="Logo"></a>
+                <form action="" class="search-box flex">
+                    <div class="select-box">
+                        <select name="categories" id="categories">
+                            <option value="All categories">All categories</option>
+                            <option value="Electronics & Digital">Electronics & Digital</option>
+                            <option value="Phones & Tablet">Phones & Tablet</option>
+                            <option value="Fashion & Clothing">Fashion & Clothing</option>
+                            <option value="TV & Mounter ">TV & Mounter</option>
+                            <option value="Jewelry & Watches">Jewelry & Watches</option>
+                            <option value="Washing Machine">Washing Machine</option>
+                            <option value="Toys & Hobbies">Toys & Hobbies</option>
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit" >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="header-icons flex">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count-favorite">0</span>
+                        </a>
+                    </div>
+                    <div onclick="open_close_cart()" class="icon">
+                        <a href="#">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <span class="count count-item-header">0</span>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <span class="open-menu"><i class="fa-solid fa-bars "></i></span>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <nav class="navbar flex">
+                    <div class="nv-saids flex">
+                        <div class="left-said flex ">
+                            <div class="icon">
+                                <a href="#">
+                                    <span onclick="cs_menu()" class="open-menu"><i class="fa-solid fa-bars "></i></span>
+                                </a>
+                            </div>
+                            <div class="category ">
+                                <button onclick="open_Category()" class="category-btn flex ">
+                                <i id="menuIcon" class="fa-solid fa-bars"></i>
+                                <p>Browse Category</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <div class="category_nav_list border flex">
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Top 10 Offers</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Electronics & Digital</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Phones & Tablet</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Fashion & Clothing</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >TV & Mounter</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Jewelry & Watches</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Washing Machine</a>
+                                    <a href="#" onclick="open_Category() , rotate_angle(), last_layer()" >Toys & Hobbies</a>
+                                </div>
+                            </div>
+
+                            <ul class="nav-links flex">
+                                <span onclick="" class="close-menu"><i class="fa-regular fa-circle-xmark"></i></span>
+                                <li onclick="cs_menu()"><a href="#" class="active" >Home</a></li>
+                                <li onclick="cs_menu()"><a href="#">About</a></li>
+                                <li onclick="cs_menu()"><a href="#">Accessories</a></li>
+                                <li onclick="cs_menu()"><a href="#">Blog</a></li>
+                                <li onclick="cs_menu()"><a href="#">Contact</a></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="right-said btns">
+                            
+                            <a href="#" class="btn" >Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                            <a href="#" class="btn" >Sign Up <i class="fa-solid fa-user-plus"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="checkout">
+        <form action="">
+
+            <div class="container flex">
+                <div class="orderSummary">
+                    <h1>Order Summary</h1>
+                    <div class="items">
+                        <article class="item-cart flex">
+                            <div class="image-name flex">
+                                <img src="../img/product/1.png" alt="product">
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p class="price-cart">$25</p>
+                                    <div class="quantity-control flex">
+                                        <button class="decrease-quantity"  data-index = ${index}>-</button>
+                                        <span class="quantity flex">$7</span>
+                                        <button class="increase-quantity" data-index = ${index}>+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="delete-items">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </article>
+                        <article class="item-cart flex">
+                            <div class="image-name flex">
+                                <img src="../img/product/2.png" alt="product">
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p class="price-cart">$25</p>
+                                    <div class="quantity-control flex">
+                                        <button class="decrease-quantity"  data-index = ${index}>-</button>
+                                        <span class="quantity flex">$7</span>
+                                        <button class="increase-quantity" data-index = ${index}>+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="delete-items">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </article>
+                        
+                    </div>
+
+                    <div class="bottom-summary">
+                        <div class="shop-table flex">
+                            <p>Subtotal :</p>
+                            <span class="subtotal-checkout">$325.00</span>
+                        </div>
+
+                        <div class="shop-table flex">
+                            <p>Shipping :</p>
+                            <span class="">$25.00</span>
+                        </div>
+
+                        <div class="shop-table flex">
+                            <p>Total :</p>
+                            <span class="total-checkout">$325.00</span>
+                        </div>
+
+                        <div class="button_dev">
+                            <button type="submit">Place Order</button>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="input-info">
+
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    
+    
+    
+    
+    
+    <!-- btn scroll up -->
+    <button class="up"><span>^</span></button>
+    
+    <!-- Start footer -->
+    <footer>
+        <div class="container flex">
+            <div class="big_row">
+                <a href="#"><img class="logo-footer" src="../img/white_logo.png" alt="Logo"></a>
+                <p>Lorem ipsum dolor sit mobiles products E-commerce Website .</p>
+                
+                <div class="social_icons flex">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div> 
+            <div class="row">
+                <h4>Find It Fast</h4>
+                <div class="links">
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Laptops & Computers</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Smart Phones & Tablet</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Tv & Audio</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Appliances</a>
+                    <a href="#"> <i class="fa-solid fa-caret-right" ></i> Jewelry & Watches</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Quick Links</h4>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Your Account</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Returns& Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Shipping & Delivery time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Estimated Delivery time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Purchase History</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Service Us</h4>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Privacy & Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right" ></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container flex">
+                <p>&copy <span><a target="_blank" href="https://mahmoud-aboseif.github.io/My-profile/">Mahmoud Aboseif</a> </span>All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="../img/payment_method.png" alt="payment">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- file js -->
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    
+    
+</body>
+</html>
