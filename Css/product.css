@@ -171,4 +171,32 @@ article.product:hover .img-product{
     transform: scale(1.03);
     background: #f47600;
 }
+@media (max-width:756px){
+    .top_slide h2 {
+        
+        font-size: 15px;
+        padding: 10px 22px;
+        
+    }
+    
+    .slide .container .mySwiper .btn{
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .slide .container .btn.swiper-button-prev {
+        left: calc(100% - 70px );
+    }
+    .product .name-product ,
+    .product .icons .btn-add-cart{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    .price .old-price{
+        font-size: 13px;
+    }
+    
+}
 

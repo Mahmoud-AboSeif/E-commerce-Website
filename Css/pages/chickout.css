@@ -114,8 +114,64 @@
     color: var(--white);
     transition: all 0.3s ease-in-out;
 }
-.checkout .orderSummary .button_dev button:hover{
+.checkout .orderSummary .button_dev button:hover,
+.checkout .input-info .coupon .btn_coupon:hover button{
     background: transparent;
     color: var(--main_color);
     transform: scale(1.002);
+}
+
+.checkout .input-info{
+    width: 45%;
+}
+.checkout .input-info h2{
+    padding: 10px 20px;
+    background: var(--main_color);
+    text-transform: capitalize;
+    color: var(--white);
+}
+.checkout .input-info .address,
+.checkout .input-info .coupon{
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--border_color);
+    box-shadow: 0px 8px 10px #c0bfbf44;
+}
+.checkout .input-info .coupon .btn_coupon{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.checkout .input-info .coupon .btn_coupon button{
+    width: 50%;
+    padding: 12px 0;
+    background: var(--main_color);
+    color: var(--white);
+    border: 2px solid var(--main_color);
+    outline: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.checkout .input-info .inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+.checkout .input-info .inputs label{
+    color: var(--color_heading);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.checkout .input-info .inputs input{
+    margin: 8px 0 22px;
+    padding: 15px 10px;
+    outline: none;
+    border: 3px solid var(--border_color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.checkout .input-info .inputs input:focus{
+    border-color: var(--main_color);
 }
