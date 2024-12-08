@@ -115,7 +115,7 @@
     transition: all 0.3s ease-in-out;
 }
 .checkout .orderSummary .button_dev button:hover,
-.checkout .input-info .coupon .btn_coupon:hover button{
+.checkout .input-info .coupon .btn_coupon button:hover{
     background: transparent;
     color: var(--main_color);
     transform: scale(1.002);

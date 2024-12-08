@@ -6,7 +6,7 @@ function open_close_cart() {
 }
 
 // Fetch Products and Setup Event Listeners
-fetch('products.json')
+fetch('./products.json')
     .then(response => response.json())
     .then(data => {
         const addToCartButtons = document.querySelectorAll('.btn-add-cart');
@@ -32,6 +32,12 @@ function addToCart(product) {
 function updateCart() {
     const cartItemContainer = document.getElementById("cart-item");
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const checkout_items = document.getElementById("checkout_items");
+    if(checkout_items){
+        checkout_items.innerHTML = "";
+    }
+
     let total_price = 0, total_count = 0;
 
     cartItemContainer.innerHTML = "";
@@ -42,7 +48,7 @@ function updateCart() {
 
         cartItemContainer.innerHTML += `
             <article class="item-cart flex">
-                <img src="${item.img}" alt="product">
+                <img src="../${item.img}" alt="product">
                 <div class="content">
                     <h4>${item.name}</h4>
                     <p class="price-cart">$${total_price_item}</p>
@@ -57,12 +63,46 @@ function updateCart() {
                 </button>
             </article>
         `;
+
+        // Add to checkout
+
+        if(checkout_items){
+            checkout_items.innerHTML += `
+            
+            <article class="item-cart flex">
+                            <div class="image-name flex">
+                                <img src="../${item.img}" alt="product">
+                                <div class="content">
+                                    <h4>${item.name}</h4>
+                                    <p class="price-cart">$${total_price_item}</p>
+                                    <div class="quantity-control flex">
+                                        <button class="decrease-quantity"  data-index = ${index}>-</button>
+                                        <span class="quantity flex">$${item.quantity}</span>
+                                        <button class="increase-quantity" data-index = ${index}>+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="delete-items" data-index="${index}">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </article>
+            `
+        }
     });
 
     // Update total price and item count
     document.querySelector('.price-cart-total').innerHTML = `$${total_price}`;
     document.querySelector('.count-item-cart').innerHTML = total_count;
     document.querySelector('.count-item-header').innerHTML = total_count;
+
+    if(checkout_items){
+        const subtotal_checkout = document.querySelector(".subtotal-checkout");
+        const total_checkout = document.querySelector(".total-checkout");
+        
+        subtotal_checkout.innerHTML = `$ ${total_price}`;
+        total_checkout.innerHTML = `$ ${total_price + 25}`;
+    }
 
     // Setup event listeners for quantity control and delete buttons
     setupCartItemEventListeners();
